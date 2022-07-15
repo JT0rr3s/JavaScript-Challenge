@@ -24,9 +24,21 @@ convertDaysToAge(6570); // returns 18
 
 // 3. Write a function that takes three numbers and returns the largest of the three numbers.
 
+const getLargestNumber = (firstNumber, secondNumber, thirdNumber) => {
+    if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+        console.log(firstNumber);
+    }
+    else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+        console.log(secondNumber);
+    }
+    else {
+        console.log(thirdNumber);
+    }
+}
 
-//getLargestNumber(2 ,1, 4); // returns 4
-//getLargestNumber(6,2,3); // returns 6
+getLargestNumber(2 ,1, 4); // returns 4
+getLargestNumber(6,2,3); // returns 6
+
 // 4. Write a function that takes an array of names and returns the last name from the array of names.
 
 
