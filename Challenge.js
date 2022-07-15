@@ -55,17 +55,16 @@ getLastName(["Ash","Stu"]);  // returns "Stu"
 // 5. Write a function that takes an array of numbers and returns true if all of the numbers are positive.
 //    It should return false if there are one or more negative numbers in the array.
 
-//function allNumbersPositive(array) {
-    //for (let i = 0; i < array.length; i++) {
-        //if (num === numbers[i]) {
-            //return true;
-        //}
+function allNumbersPositive(arr) {
+let result = true;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] <= 0) {
+        result = false;
+        break;
+    }
+}
+console.log(result);
+}
 
-        //else {
-            //return false;
-        //}
-    //}
-//}
-
-//allNumbersPositive([2,4,5]); // returns true
-//allNumbersPositive([-5,4,6]); // returns false
+allNumbersPositive([2,4,5]); // returns true
+allNumbersPositive([-5,4,6]); // returns false
